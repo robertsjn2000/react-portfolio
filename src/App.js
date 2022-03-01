@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App col text-light bg-dark">
       <Header/>
-      <HashRouter basename='/'>
+      <HashRouter>
          <Route exact path ="/" component={About}/>
          <Route exact path ="/portfolio" component={Portfolio}/>
          <Route exact path ="/contactMe" component={Contact}/>
