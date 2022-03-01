@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import About from "./components/About"
 import Portfolio from './components/Portfolio';
 import Contact from "./components/Contact";
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {HashRouter, Routes, Route} from "react-router-dom";
 import Resume from "./components/Resume";
 import Footer from "./components/Footer"
 
@@ -13,14 +13,14 @@ function App() {
   return (
     <div className="App col text-light bg-dark">
       <Header/>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
          <Route exact path ="/" element={<About/>}></Route>
          <Route exact path ="/portfolio" element={<Portfolio/>}></Route>
          <Route exact path ="/contactMe" element={<Contact/>}></Route>
          <Route exact path ="/resume" element={<Resume/>}></Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <Footer/>
     </div>
   );
