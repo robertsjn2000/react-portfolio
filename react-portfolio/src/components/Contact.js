@@ -32,7 +32,7 @@ function Contact() {
             setError("Message is required.");
             return;
         }
-        if(validateEmail(email) == false){
+        if(validateEmail(email) === false){
             setError("Invalid Email Address");
             return;
         }
@@ -44,6 +44,7 @@ function Contact() {
     };
     return (
         <div>
+            <h1>Contact Me</h1>
             <form>
                 <div className="form-group">
                     <label htmlFor="name">Name</label>

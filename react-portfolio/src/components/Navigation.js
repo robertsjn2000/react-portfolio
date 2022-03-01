@@ -12,7 +12,7 @@ function Navigation(){
                     <a href="/portfolio" className="nav-link">Portfolio</a>
                 </li>
                 <li className="nav-item">
-                    <a href="/resume" className="nav-link">Resume</a>
+                    <a href="https://docs.google.com/document/d/1cdxtch8rGiM-hXh1ZJYld5mzGSWA4GpBjMWkod1iL1g/edit?usp=sharing" className="nav-link">Resume</a>
                 </li>
                 <li className="nav-item">
                     <a href="/contactMe" className="nav-link">Contact Me</a>
