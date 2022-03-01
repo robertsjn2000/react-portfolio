@@ -6,16 +6,16 @@ function Navigation(){
         <div>
             <ul className="nav navbar-nav navbar-right">
                 <li className="nav-item">
-                    <Link to="/" className="nav-link">About Me</Link>
+                    <Link to="#/" className="nav-link">About Me</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/portfolio" className="nav-link">Portfolio</Link>
+                    <Link to="#/portfolio" className="nav-link">Portfolio</Link>
                 </li>
                 <li className="nav-item">
                     <a href="https://docs.google.com/document/d/1cdxtch8rGiM-hXh1ZJYld5mzGSWA4GpBjMWkod1iL1g/edit?usp=sharing" className="nav-link">Resume</a>
                 </li>
                 <li className="nav-item">
-                    <Link to="/contactMe" className="nav-link">Contact Me</Link>
+                    <Link to="#/contactMe" className="nav-link">Contact Me</Link>
                 </li>
             </ul>
         </div>
