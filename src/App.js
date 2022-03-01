@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import About from "./components/About"
 import Portfolio from './components/Portfolio';
 import Contact from "./components/Contact";
-import {HashRouter, Routes, Route} from "react-router-dom";
+import {HashRouter, Route} from "react-router-dom";
 import Resume from "./components/Resume";
 import Footer from "./components/Footer"
 
@@ -13,13 +13,11 @@ function App() {
   return (
     <div className="App col text-light bg-dark">
       <Header/>
-      <HashRouter>
-        <Routes>
-         <Route exact path ="/" element={<About/>}></Route>
-         <Route exact path ="/portfolio" element={<Portfolio/>}></Route>
-         <Route exact path ="/contactMe" element={<Contact/>}></Route>
-         <Route exact path ="/resume" element={<Resume/>}></Route>
-        </Routes>
+      <HashRouter basename='/'>
+         <Route exact path ="/" component={About}/>
+         <Route exact path ="/portfolio" component={Portfolio}/>
+         <Route exact path ="/contactMe" component={Contact}/>
+         <Route exact path ="/resume" component={Resume}/>
       </HashRouter>
       <Footer/>
     </div>
